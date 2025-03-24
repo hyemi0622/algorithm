@@ -25,4 +25,3 @@
 | 11 | 12주차 (6월 10일) | 시뮬레이션 | [바로가기](./algorithms/simulation) | 3 | 
 | 12 | 13주차 (6월 17일) | 이분탐색 | [바로가기](./algorithms/binary_search) | 3 | 
 | 13 | 14주차 (6월 24일) | 백트래킹 | [바로가기](./algorithms/backtracking) | 3 |
-
