@@ -99,7 +99,7 @@ class LinkedList {
 }
 
 
-public class Main {
+public class PracticeLinkedList {
 
     public static void main(String[] args) {
 
