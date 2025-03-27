@@ -7,8 +7,14 @@ public:
     int data;
     Node* next;
 
-    Node() : data(0), next(nullptr) {}
-    Node(int data, Node* next = nullptr) : data(data), next(next) {}
+    Node() {
+        data = 0;
+        next = nullptr;
+    }
+    Node(int data, Node* next = nullptr) {
+        this->data = data;
+        this->next = next;
+    }
 };
 
 // 연결 리스트
@@ -16,8 +22,12 @@ class LinkedList {
 public:
     Node* head;
 
-    LinkedList() : head(nullptr) {}
-    LinkedList(Node* node) : head(node) {}
+    LinkedList() {
+        head = nullptr;
+    }
+    LinkedList(Node* node) {
+        head = node;
+    }
 
     // 연결 리스트 비어있는지 확인
     bool isEmpty() {
