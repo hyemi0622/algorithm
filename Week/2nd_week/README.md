@@ -1,4 +1,4 @@
-# Data Structre (자료구조) - 연결리스트, 스 🔗
+# Data Structre (자료구조) - 연결리스트, 스택 🔗
 [![메인으로 돌아가기](https://img.shields.io/badge/메인으로%20돌아가기-112051)](https://github.com/hyemi0622/algorithm) 
 
 
