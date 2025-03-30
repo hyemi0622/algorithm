@@ -10,7 +10,7 @@
 
 |순번|추천 문제|정답률|문제 이름|난이도|
 |:--:|:--:|:--:|:--:|:--:|
-|001|:heavy_check_mark:|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12906" target="_blank">78%</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12906" target="_blank">같은 숫자는 싫어</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12906" target="_blank">Lv.1</a>|
-|002|:heavy_check_mark:|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/120844" target="_blank">88%</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/120844" target="_blank">배열 회전시키기</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/120844" target="_blank">Lv.0</a>|
-|003|:heavy_check_mark:|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/181921" target="_blank">74%</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/181921" target="_blank">배열 만들기2</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/181921" target="_blank">Lv.0</a>|
+|001|:heavy_check_mark:|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12906" target="_blank">78%</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12906" target="_blank">같은 숫자는 싫어(Stack)</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12906" target="_blank">Lv.1</a>|
+|002|:heavy_check_mark:|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12909" target="_blank">79%</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12909" target="_blank">올바른 괄호(Stack)</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12909" target="_blank">Lv.2</a>|
+|003|:heavy_check_mark:|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12932" target="_blank">88%</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12932" target="_blank">자연수 뒤집어 배열 만들기(linked_list)</a>|<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12932" target="_blank">Lv.1</a>|
 
