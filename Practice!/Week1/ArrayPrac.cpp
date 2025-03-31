@@ -62,11 +62,12 @@ int main() {
 // arr: 3, 1, 2, 6, 2, 2, 5, 1, 9, 10, 1, 11
 // 결과: 3, 6, 5, 10, 11
 
-public class Practice4 {
-    public static void main(String[] args) {
+#include <iostream>
+using namespace std;
 
-    }
+int main() {
 
+  // 코드 구현 부분
 }
 
 
