@@ -1,4 +1,4 @@
-#이여빈
+//#이여빈
 
 function solution(arr, n) {
     if(arr.length%2){
