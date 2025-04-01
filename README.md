@@ -12,7 +12,7 @@
 | 순번 | 주차                          | 내용                | 문제집    | 총 문제 수 |  상태             |
 | :--: | :--------------------------: | :-----------------: | :------:  | :------: |:---------------:|
 | 01 | 1주차 (3월 25일) ✔ | 선형자료구조 - 배열  | [바로가기](./Week/1st_week) | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) |
-| 02 | 2주차 (4월 1일)  | 선형자료구조 - 연결리스트, 스택  | [바로가기](./Week/2nd_week) | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) |
+| 02 | 2주차 (4월 1일)  ✔ | 선형자료구조 - 연결리스트, 스택  | [바로가기](./Week/2nd_week) | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) |
 | 03 | 3주차 (4월 8일)   | 선형자료구조 - 큐, 데크, 해시 테이블 | [바로가기](./Week/3rd_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
 | 04 | 4주차 (4월 15일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) | 
 | 05 | 5주차 (4월 22일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
