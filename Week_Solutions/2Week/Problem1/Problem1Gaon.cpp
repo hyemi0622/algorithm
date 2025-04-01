@@ -1,17 +1,25 @@
+// 정가온
 #include <vector>
 #include <iostream>
+#include <stack>
 
 using namespace std;
 
 vector<int> solution(vector<int> arr) 
 {
-    vector<int> answer;
-    answer.push_back(arr[0]);
+    stack<int> s;
+    
+    s.push(arr[0]);
     
     for (int i=1; i<arr.size(); i++) {
-        if (arr[i]!=arr[i-1]) {
-            answer.push_back(arr[i]);
-        }
+        if(s.top()!=arr[i]) 
+            s.push(arr[i]);
+    }
+    
+    vector<int> answer(s.size());
+    for (int i = s.size() - 1; i >= 0; i--) {
+        answer[i] = s.top(); 
+        s.pop();
     }
     
     return answer;
