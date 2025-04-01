@@ -1,19 +1,24 @@
 #include <string>
 #include<list>
 #include <vector>
+#include<iostream>
 
 using namespace std;
 
 vector<int> solution(long long n) {
-    list<int> a;
-    for (int i = 1; i < a.size(); ++i) 
-        a.push_back(i);
-
-    a.reverse();
-    for (auto i : a)
+    list <int> a1;
+    while (n > 0)
     {
-        cout<<
+        a1.push_back(n % 10);
+        n /= 10;
+    }
+    
+    vector<int> a2;
+    for (auto i : a1)
+    {
+        a2.push_back(i);
     }
 
+    return a2;
     
 }
