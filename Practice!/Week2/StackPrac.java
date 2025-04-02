@@ -28,7 +28,7 @@ public class Practice1 {
 
 
 
-// Practice3
+// Practice2
 // 후위표기법 연산
 // 참고 설명) 전위/중위/후위 표기법
 
@@ -61,7 +61,7 @@ public class Practice2 {
 
 
 
-// Practice4
+// Practice3
 // 두 문자열 비교
 // 단, #은 backspace 로 바로 이전의 문자를 삭제하는 기능이라고 가정
 
@@ -78,7 +78,7 @@ public class Practice2 {
 
 import java.util.Stack;
 
-public class Practice4 {
+public class Practice3 {
 
 //    public static boolean stringCompare(String s1, String s2) {
 //    }
