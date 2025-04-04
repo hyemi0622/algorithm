@@ -1,4 +1,4 @@
-//남태민
+//남태민 / 배운 개념을 안썼네요 ... 다시 풀게요 ㅠ
 #include <vector>
 #include <iostream>
 
