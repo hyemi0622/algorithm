@@ -154,3 +154,36 @@ linkedList3.addData(5);
 linkedList3.addData(1);
 console.log(checkPalindrome(linkedList3)); // false
 
+
+
+
+// Practice3
+// 연결 리스트 부분 뒤집기
+// 주어진 연결 리스트에서 시작 위치부터 끝 성
+  return linkedList;
+}
+
+// 테스트 코드
+const linkedList1 = new LinkedList();
+linkedList1.addData(1);
+linkedList1.addData(2);
+linkedList1.addData(3);
+linkedList1.addData(4);
+linkedList1.addData(5);
+linkedList1.showData(); // 출력: 1 -> 2 -> 3 -> 4 -> 5
+
+reverseList(linkedList1, 2, 4);
+linkedList1.showData(); // 출력: 1 -> 4 -> 3 -> 2 -> 5
+
+const linkedList2 = new LinkedList();
+linkedList2.addData(1);
+linkedList2.addData(2);
+linkedList2.addData(3);
+linkedList2.addData(4);
+linkedList2.addData(5);
+linkedList2.addData(6);
+linkedList2.addData(7);
+linkedList2.showData(); // 출력: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
+
+reverseList(linkedList2, 3, 5);
+linkedList2.showData(); // 출력: 1 -> 2 -> 5 -> 4 -> 3 -> 6 -> 7
