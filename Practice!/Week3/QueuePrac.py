@@ -33,3 +33,14 @@ print(findLastCard(9)) # 출력: 2
 
 # 입력: N = 7, K = 3
 # 결과: 3, 6, 2, 7, 5, 1, 4
+from collections import deque
+
+def get_josephus_permutation(N, K):
+    queue = 
+    result = []
+    //여기에 코드 작성
+    return result
+
+# Test code
+print(get_josephus_permutation(5, 2))  # 출력: [2, 4, 1, 5, 3]
+print(get_josephus_permutation(7, 3))  # 출력: [3, 6, 2, 7, 5, 1, 4]
