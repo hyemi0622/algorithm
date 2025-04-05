@@ -251,11 +251,11 @@ public:
 };
 
 
-    LinkedList reverseList(int left, int right) {
-        //여기에 코드 작성
-        return *this;
-    }
-};
+LinkedList reverseList(int left, int right) {
+     //여기에 코드 작성
+     return *this;
+ }
+
 
 int main() {
     LinkedList linkedList;
