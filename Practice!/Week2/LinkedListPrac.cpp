@@ -181,3 +181,107 @@ int main() {
     return 0;
 }
 
+
+
+
+// Practice3
+// 연결 리스트 부분 뒤집기
+// 주어진 연결 리스트에서 시작 위치부터 끝 위치 사이의 노드들을 뒤집으시오.
+
+// 입력 예시)
+// 입력 연결 리스트: 1, 2, 3, 4, 5
+// 시작 위치: 2
+// 끝 위치: 4
+// (처음 위치는 1부터라고 가정)
+// 결과 연결 리스트: 1, 4, 3, 2, 5
+#include <iostream>
+#include <unordered_set>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        this->next = nullptr;
+    }
+};
+
+class LinkedList {
+public:
+    Node* head;
+
+    LinkedList() {
+        this->head = nullptr;
+    }
+
+    void addData(int data) {
+        if (this->head == nullptr) {
+            this->head = new Node(data);
+        } else {
+            Node* cur = this->head;
+            while (cur->next != nullptr) {
+                cur = cur->next;
+            }
+            cur->next = new Node(data);
+        }
+    }
+
+    bool findData(int data) {
+        Node* cur = this->head;
+        while (cur != nullptr) {
+            if (cur->data == data) {
+                return true;
+            }
+            cur = cur->next;
+        }
+        return false;
+    }
+
+    void showData() {
+        Node* cur = this->head;
+        while (cur != nullptr) {
+            cout << cur->data << " ";
+            cur = cur->next;
+        }
+        cout << endl;
+    }
+};
+
+
+    LinkedList reverseList(int left, int right) {
+        //여기에 코드 작성
+        return *this;
+    }
+};
+
+int main() {
+    LinkedList linkedList;
+    linkedList.addData(1);
+    linkedList.addData(2);
+    linkedList.addData(3);
+    linkedList.addData(4);
+    linkedList.addData(5);
+    linkedList.showData();
+
+    linkedList.reverseList(2, 4);
+    linkedList.showData();
+
+    LinkedList linkedList2;
+    linkedList2.addData(1);
+    linkedList2.addData(2);
+    linkedList2.addData(3);
+    linkedList2.addData(4);
+    linkedList2.addData(5);
+    linkedList2.addData(6);
+    linkedList2.addData(7);
+    linkedList2.showData();
+
+    linkedList2.reverseList(3, 5);
+    linkedList2.showData();
+
+    return 0;
+}
+
