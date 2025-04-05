@@ -6,3 +6,13 @@
 # 입력 예시)
 # 입력 데이터: 1 -> 2 -> 3 -> 4 -> 5
 # 출력 데이터: 1 -> 5 -> 2 -> 4 -> 3
+from collections import deque
+
+def reorderData(arr):
+    dq = deque(arr) # 배열의 모든 요소를 덱에 추가
+    //여기에 코드 작성
+   
+
+# Test code
+reorderData([1, 2, 3, 4, 5]) # 출력: "1 -> 5 -> 2 -> 4 -> 3"
+reorderData([1, 2, 3, 4, 5, 6, 7]) # 출력: "1 -> 7 -> 2 -> 6 -> 3 -> 5 -> 4"
