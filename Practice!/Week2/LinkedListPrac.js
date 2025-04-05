@@ -167,6 +167,33 @@ console.log(checkPalindrome(linkedList3)); // false
 // 끝 위치: 4
 // (처음 위치는 1부터라고 가정)
 // 결과 연결 리스트: 1, 4, 3, 2, 5
+ class Node {
+  constructor(data) {
+    this.data = data;
+    this.next = null;
+  }
+}
+
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+
+  addData(data) {
+    if (!this.head) {
+      this.head = new Node(data);
+      return;
+    }
+
+    let current = this.head;
+    while (current.next) {
+      current = current.next;
+    }
+    current.next = new Node(data);
+  }
+
+  findData(data) {
+    let cu성
   return linkedList;
 }
 
@@ -194,3 +221,4 @@ linkedList2.showData(); // 출력: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 
 reverseList(linkedList2, 3, 5);
 linkedList2.showData(); // 출력: 1 -> 2 -> 5 -> 4 -> 3 -> 6 -> 7
+
