@@ -193,7 +193,28 @@ class LinkedList {
   }
 
   findData(data) {
-    let cu성
+    let current = this.head;
+    while (current) {
+      if (current.data === data) return true;
+      current = current.next;
+    }
+    return false;
+  }
+
+  showData() {
+    let current = this.head;
+    const result = [];
+    while (current) {
+      result.push(current.data);
+      current = current.next;
+    }
+    console.log(result.join(" "));
+  }
+}
+
+// 연결 리스트 부분 뒤집기 함수
+function reverseList(linkedList, left, right) {
+  //여기에 코드 작성
   return linkedList;
 }
 
