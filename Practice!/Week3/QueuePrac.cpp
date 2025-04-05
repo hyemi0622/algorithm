@@ -39,3 +39,53 @@ int main() {
 
 // 입력: N = 7, K = 3
 // 결과: 3, 6, 2, 7, 5, 1, 4
+#include <iostream>
+#include <queue>
+#include <vector>
+using namespace std;
+
+vector<int> getJosephusPermutation(int N, int K) {
+    queue<int> q;
+    vector<int> result;
+    //여기에 코드 작성
+     return result;
+}
+
+int main() {
+    // Test code
+    vector<int> result1 = getJosephusPermutation(5, 2);
+    for (int num : result1) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    vector<int> result2 = getJosephusPermutation(7, 3);
+    for (int num : result2) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
+
+    return result;
+}
+
+int main() {
+    // Test code
+    vector<int> result1 = getJosephusPermutation(5, 2);
+    for (int num : result1) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    vector<int> result2 = getJosephusPermutation(7, 3);
+    for (int num : result2) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
