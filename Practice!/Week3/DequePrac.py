@@ -16,3 +16,21 @@ def reorderData(arr):
 # Test code
 reorderData([1, 2, 3, 4, 5]) # 출력: "1 -> 5 -> 2 -> 4 -> 3"
 reorderData([1, 2, 3, 4, 5, 6, 7]) # 출력: "1 -> 7 -> 2 -> 6 -> 3 -> 5 -> 4"
+
+
+
+
+# Practice2
+# Palindrome 찾기
+# Palindrome 이면 true, 아니면 false 를 반환하세요.
+# Palindrome: 앞으로 읽어도 거꾸로 읽어도 같은 문자열
+
+# 입출력 예시)
+# 입력: a
+# 결과: true
+
+# 입력: madam
+# 결과: true
+
+# 입력: abab
+# 결과: false
