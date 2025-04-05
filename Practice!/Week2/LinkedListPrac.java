@@ -92,10 +92,6 @@ class LinkedList {
     }
 }
 
-// 입출력 예시)
-// 입력 연결 리스트: 1, 3, 3, 1, 4, 2, 4, 2
-// 결과 연결 리스트: 1, 3, 4, 2
-
 public class Practice1 {
     public static LinkedList removeDup(LinkedList listBefore) {
         // 여기에 코드 작성
