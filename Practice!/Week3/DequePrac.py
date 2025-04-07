@@ -48,3 +48,17 @@ print(check_palindrome("abab"))    # False
 print(check_palindrome("abcba"))   # True
 print(check_palindrome("abccba"))  # True
 print(check_palindrome("madam"))   # True
+
+
+
+// Practice3
+// 데크 변형
+// 기본 데크 구조에서 중간에 데이터를 추가하는 기능을 구현하세요.
+// 단, 추가적인 자료구조 생성하지 말고 구현
+
+// 입력 예시)
+// 초기 데크 상태 (size: 5)
+// -> 1, 2, 3, 4
+// 중간 입력: 10
+// 결과 데크
+// -> 1, 2, 10, 3, 4
