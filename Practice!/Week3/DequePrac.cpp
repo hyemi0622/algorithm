@@ -43,3 +43,26 @@ int main() {
 
 // 입력: abab
 // 결과: false
+
+#include <iostream>
+#include <deque>
+#include <string>
+
+using namespace std;
+
+bool checkPalindrome(const string& str) {
+    // Add code here
+    return false;  // Placeholder
+}
+
+int main() {
+    // Test code
+    cout << checkPalindrome("a") << endl;       // true
+    cout << checkPalindrome("aba") << endl;     // true
+    cout << checkPalindrome("abba") << endl;    // true
+    cout << checkPalindrome("abab") << endl;    // false
+    cout << checkPalindrome("abcba") << endl;   // true
+    cout << checkPalindrome("abccba") << endl;  // true
+    cout << checkPalindrome("madam") << endl;   // true
+}
+
