@@ -31,3 +31,16 @@ reorderData([1, 2, 3, 4, 5, 6, 7]); // 출력: 1 -> 7 -> 2 -> 6 -> 3 -> 5 -> 4
 
 // 입력: abab
 // 결과: false
+function checkPalindrome(str) {
+    // Add code here
+    return false; // Placeholder
+}
+
+// Test code
+console.log(checkPalindrome("a"));       // true
+console.log(checkPalindrome("aba"));     // true
+console.log(checkPalindrome("abba"));    // true
+console.log(checkPalindrome("abab"));    // false
+console.log(checkPalindrome("abcba"));   // true
+console.log(checkPalindrome("abccba"));  // true
+console.log(checkPalindrome("madam"));   // true
