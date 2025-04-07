@@ -79,3 +79,83 @@ int main() {
 // 중간 입력: 10
 // 결과 데크
 // -> 1, 2, 10, 3, 4
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class MyDeque {
+private:
+    vector<int> arr;
+    int front = 0;
+    int rear = 0;
+
+public:
+    MyDeque(int size) {
+        arr.resize(size + 1);  // Deque with size+1 to handle circular structure
+    }
+
+    bool isEmpty() {
+        return front == rear;
+    }
+
+    bool isFull() {
+        return (rear + 1) % arr.size() == front;
+    }
+
+    void addFirst(int data) {
+        if (isFull()) {
+           성
+    }
+
+    int removeLast() {
+        if (isEmpty()) {
+            cout << "Deque is empty!" << endl;
+            return -1;
+        }
+        int data = arr[rear];
+        rear = (rear - 1 + arr.size()) % arr.size();
+        return data;
+    }
+
+    void printDeque() {
+        int start = (front + 1) % arr.size();
+        int end = (rear + 1) % arr.size();
+
+        for (int i = start; i != end; i = (i + 1) % arr.size()) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    // Test code
+    MyDeque myDeque1(5);
+    myDeque1.addLast(1);
+    myDeque1.addLast(2);
+    myDeque1.addLast(3);
+    myDeque1.addLast(4);
+    myDeque1.printDeque();
+
+    myDeque1.addMiddle(10);
+    myDeque1.printDeque();
+
+    MyDeque myDeque2(5);
+    myDeque2.addLast(10);
+    myDeque2.addLast(10);
+    myDeque2.addLast(10);
+    myDeque2.addLast(10);
+    myDeque2.addLast(10);
+    myDeque2.removeFirst();
+    myDeque2.removeFirst();
+    myDeque2.removeFirst();
+    myDeque2.removeFirst();
+    myDeque2.addLast(11);
+    myDeque2.addLast(12);
+    myDeque2.addLast(13);
+    myDeque2.printDeque();
+
+    myDeque2.addMiddle(100);
+    myDeque2.printDeque();
+}
