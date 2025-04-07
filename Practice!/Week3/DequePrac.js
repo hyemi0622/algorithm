@@ -59,3 +59,75 @@ console.log(checkPalindrome("madam"));   // true
 // 중간 입력: 10
 // 결과 데크
 // -> 1, 2, 10, 3, 4
+class MyDeque {
+    constructor(size) {
+        this.arr = new Array(size + 1);  // Deque with size+1 to handle circular structure
+        this.front = 0;
+        this.rear = 0;
+    }
+
+    isEmpty() {
+        return this.front === this.rear;
+    }
+
+ 성
+    }
+
+    removeFirst() {
+        if (this.isEmpty()) {
+            console.log("Deque is empty!");
+            return null;
+        }
+        this.front = (this.front + 1) % this.arr.length;
+        return this.arr[this.front];
+    }
+
+    removeLast() {
+        if (this.isEmpty()) {
+            console.log("Deque is empty!");
+            return null;
+        }
+        let data = this.arr[this.rear];
+        this.rear = (this.rear - 1 + this.arr.length) % this.arr.length;
+        return data;
+    }
+
+    printDeque() {
+        let start = (this.front + 1) % this.arr.length;
+        let end = (this.rear + 1) % this.arr.length;
+
+        while (start !== end) {
+            console.log(this.arr[start]);
+            start = (start + 1) % this.arr.length;
+        }
+    }
+}
+
+// Test code
+let myDeque1 = new MyDeque(5);
+myDeque1.addLast(1);
+myDeque1.addLast(2);
+myDeque1.addLast(3);
+myDeque1.addLast(4);
+myDeque1.printDeque();
+
+myDeque1.addMiddle(10);
+myDeque1.printDeque();
+
+let myDeque2 = new MyDeque(5);
+myDeque2.addLast(10);
+myDeque2.addLast(10);
+myDeque2.addLast(10);
+myDeque2.addLast(10);
+myDeque2.addLast(10);
+myDeque2.removeFirst();
+myDeque2.removeFirst();
+myDeque2.removeFirst();
+myDeque2.removeFirst();
+myDeque2.addLast(11);
+myDeque2.addLast(12);
+myDeque2.addLast(13);
+myDeque2.printDeque();
+
+myDeque2.addMiddle(100);
+myDeque2.printDeque();
