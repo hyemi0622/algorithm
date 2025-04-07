@@ -51,14 +51,95 @@ print(check_palindrome("madam"))   # True
 
 
 
-// Practice3
-// 데크 변형
-// 기본 데크 구조에서 중간에 데이터를 추가하는 기능을 구현하세요.
-// 단, 추가적인 자료구조 생성하지 말고 구현
+# Practice3
+# 데크 변형
+# 기본 데크 구조에서 중간에 데이터를 추가하는 기능을 구현하세요.
+# 단, 추가적인 자료구조 생성하지 말고 구현
 
-// 입력 예시)
-// 초기 데크 상태 (size: 5)
-// -> 1, 2, 3, 4
-// 중간 입력: 10
-// 결과 데크
-// -> 1, 2, 10, 3, 4
+# 입력 예시)
+# 초기 데크 상태 (size: 5)
+# -> 1, 2, 3, 4
+# 중간 입력: 10
+# 결과 데크
+# -> 1, 2, 10, 3, 4
+class MyDeque:
+    def __init__(self, size):
+        self.arr = [None] * (size + 1)  # Deque with size+1 to handle circular structure
+        self.front = 0
+        self.rear = 0
+
+    def is_empty(self):
+        return self.front == self.rear
+
+    def is_full(self):
+        return (self.rear + 1) % len(self.arr) == self.front
+
+    def add_first(self, data):
+        if self.is_full():
+            print("Deque is full!")
+            return
+        self.front = (self.front - 1 + len(self.arr)) % len(self.arr)
+        self.arr[self.front] = data
+
+    def add_last(self, data):
+        if self.is_full():
+            print("Deque is full!")
+            return
+        self.rear = (self.rear + 1) % len(self.arr)
+        self.arr[self.rear] = data
+
+    def add_middle(self, data):
+        //여기에 코드 작성
+
+    def remove_first(self):
+        if self.is_empty():
+            print("Deque is empty!")
+            return None
+        self.front = (self.front + 1) % len(self.arr)
+        return self.arr[self.front]
+
+    def remove_last(self):
+        if self.is_empty():
+            print("Deque is empty!")
+            return None
+        data = self.arr[self.rear]
+        self.rear = (self.rear - 1 + len(self.arr)) % len(self.arr)
+        return data
+
+    def print_deque(self):
+        start = (self.front + 1) % len(self.arr)
+        end = (self.rear + 1) % len(self.arr)
+
+        while start != end:
+            print(self.arr[start], end=" ")
+            start = (start + 1) % len(self.arr)
+        print()
+
+# Test code
+myDeque1 = MyDeque(5)
+myDeque1.add_last(1)
+myDeque1.add_last(2)
+myDeque1.add_last(3)
+myDeque1.add_last(4)
+myDeque1.print_deque()
+
+myDeque1.add_middle(10)
+myDeque1.print_deque()
+
+myDeque2 = MyDeque(5)
+myDeque2.add_last(10)
+myDeque2.add_last(10)
+myDeque2.add_last(10)
+myDeque2.add_last(10)
+myDeque2.add_last(10)
+myDeque2.remove_first()
+myDeque2.remove_first()
+myDeque2.remove_first()
+myDeque2.remove_first()
+myDeque2.add_last(11)
+myDeque2.add_last(12)
+myDeque2.add_last(13)
+myDeque2.print_deque()
+
+myDeque2.add_middle(100)
+myDeque2.print_deque()
