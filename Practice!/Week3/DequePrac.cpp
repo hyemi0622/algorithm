@@ -191,3 +191,113 @@ int main() {
 // 데크 리사이즈
 // 기본 데크 구조에서 데크 공간이 full 일 때 데이터를 추가하는 경우,
 // 데크 공간을 2배 씩 늘려주는 코드를 작성하세요.
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class MyDeque2 {
+private:
+    vector<int> arr;
+    int front = 0;
+    int rear = 0;
+
+public:
+    MyDeque2(int size) {
+        arr.resize(size + 1); // Deque with size+1 to handle circular structure
+    }
+
+    bool isEmpty() {
+        return front == rear;
+    }
+
+    bool isFull() {
+        return (rear + 1) % arr.size() == front;
+    }
+
+    void increaseSize() {
+        //여기에 코드 작성
+    }
+
+    void addFirst(int data) {
+        if (isFull()) {
+            cout << "Deque is full!" << endl;
+            return;
+        }
+
+        arr[front] = data;
+        front = (front - 1 + arr.size()) % arr.size();
+    }
+
+    void addLast(int data) {
+        if (isFull()) {
+            cout << "Deque is full!" << endl;
+            return;
+        }
+
+        rear = (rear + 1) % arr.size();
+        arr[rear] = data;
+    }
+
+    int removeFirst() {
+        if (isEmpty()) {
+            cout << "Deque is empty!" << endl;
+            return -1;
+        }
+
+        front = (front + 1) % arr.size();
+        return arr[front];
+    }
+
+    int removeLast() {
+        if (isEmpty()) {
+            cout << "Deque is empty!" << endl;
+            return -1;
+        }
+
+        int data = arr[rear];
+        rear = (rear - 1 + arr.size()) % arr.size();
+        return data;
+    }
+
+    void printDeque() {
+        int start = (front + 1) % arr.size();
+        int end = (rear + 1) % arr.size();
+
+        while (start != end) {
+            cout << arr[start] << " ";
+            start = (start + 1) % arr.size();
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    // Test code
+    MyDeque2 myDeque(5);
+
+    myDeque.addLast(1);
+    myDeque.addLast(2);
+    myDeque.addLast(3);
+    myDeque.addLast(4);
+    myDeque.addLast(5);
+    myDeque.printDeque();
+
+    myDeque.addLast(6);
+    myDeque.addLast(7);
+    myDeque.addLast(8);
+    myDeque.addLast(9);
+    myDeque.addLast(10);
+    myDeque.printDeque();
+
+    myDeque.removeLast();
+    myDeque.removeLast();
+    myDeque.addFirst(100);
+    myDeque.addFirst(200);
+    myDeque.printDeque();
+
+    myDeque.addFirst(300);
+    myDeque.addFirst(400);
+    myDeque.addFirst(500);
+    myDeque.printDeque();
+}
