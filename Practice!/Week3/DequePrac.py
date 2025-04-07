@@ -34,3 +34,17 @@ reorderData([1, 2, 3, 4, 5, 6, 7]) # 출력: "1 -> 7 -> 2 -> 6 -> 3 -> 5 -> 4"
 
 # 입력: abab
 # 결과: false
+from collections import deque
+
+def check_palindrome(s):
+    # Add code here
+    return False  # Placeholder
+
+# Test code
+print(check_palindrome("a"))       # True
+print(check_palindrome("aba"))     # True
+print(check_palindrome("abba"))    # True
+print(check_palindrome("abab"))    # False
+print(check_palindrome("abcba"))   # True
+print(check_palindrome("abccba"))  # True
+print(check_palindrome("madam"))   # True
