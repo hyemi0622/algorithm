@@ -105,7 +105,33 @@ public:
 
     void addFirst(int data) {
         if (isFull()) {
-           성
+            cout << "Deque is full!" << endl;
+            return;
+        }
+        front = (front - 1 + arr.size()) % arr.size();
+        arr[front] = data;
+    }
+
+    void addLast(int data) {
+        if (isFull()) {
+            cout << "Deque is full!" << endl;
+            return;
+        }
+        rear = (rear + 1) % arr.size();
+        arr[rear] = data;
+    }
+
+    void addMiddle(int data) {
+        //여기에 코드 작성
+    }
+
+    int removeFirst() {
+        if (isEmpty()) {
+            cout << "Deque is empty!" << endl;
+            return -1;
+        }
+        front = (front + 1) % arr.size();
+        return arr[front];
     }
 
     int removeLast() {
