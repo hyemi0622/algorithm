@@ -150,3 +150,84 @@ myDeque2.print_deque()
 # 데크 리사이즈
 # 기본 데크 구조에서 데크 공간이 full 일 때 데이터를 추가하는 경우,
 # 데크 공간을 2배 씩 늘려주는 코드를 작성하세요.
+class MyDeque2:
+    def __init__(self, size):
+        self.arr = [None] * (size + 1)  # Deque with size+1 to handle circular structure
+        self.front = 0
+        self.rear = 0
+
+    def is_empty(self):
+        return self.front == self.rear
+
+    def is_full(self):
+        return (self.rear + 1) % len(self.arr) == self.front
+
+    def increase_size(self):
+        #여기에 코드 작성
+
+    def add_first(self, data):
+        if self.is_full():
+            print("Deque is full!")
+            return
+        self.arr[self.front] = data
+        self.front = (self.front - 1 + len(self.arr)) % len(self.arr)
+
+    def add_last(self, data):
+        if self.is_full():
+            print("Deque is full!")
+            return
+        self.rear = (self.rear + 1) % len(self.arr)
+        self.arr[self.rear] = data
+
+    def remove_first(self):
+        if self.is_empty():
+            print("Deque is empty!")
+            return None
+        self.front = (self.front + 1) % len(self.arr)
+        return self.arr[self.front]
+
+    def remove_last(self):
+        if self.is_empty():
+            print("Deque is empty!")
+            return None
+        data = self.arr[self.rear]
+        self.rear = (self.rear - 1 + len(self.arr)) % len(self.arr)
+        return data
+
+    def print_deque(self):
+        start = (self.front + 1) % len(self.arr)
+        end = (self.rear + 1) % len(self.arr)
+
+        while start != end:
+            print(self.arr[start], end=" ")
+            start = (start + 1) % len(self.arr)
+        print()
+
+
+# Test code
+myDeque = MyDeque2(5)
+
+myDeque.add_last(1)
+myDeque.add_last(2)
+myDeque.add_last(3)
+myDeque.add_last(4)
+myDeque.add_last(5)
+myDeque.print_deque()
+
+myDeque.add_last(6)
+myDeque.add_last(7)
+myDeque.add_last(8)
+myDeque.add_last(9)
+myDeque.add_last(10)
+myDeque.print_deque()
+
+myDeque.remove_last()
+myDeque.remove_last()
+myDeque.add_first(100)
+myDeque.add_first(200)
+myDeque.print_deque()
+
+myDeque.add_first(300)
+myDeque.add_first(400)
+myDeque.add_first(500)
+myDeque.print_deque()
