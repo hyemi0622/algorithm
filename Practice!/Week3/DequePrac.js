@@ -155,3 +155,9 @@ myDeque2.printDeque();
 myDeque2.addMiddle(100);
 myDeque2.printDeque();
 
+
+
+// Practice4
+// 데크 리사이즈
+// 기본 데크 구조에서 데크 공간이 full 일 때 데이터를 추가하는 경우,
+// 데크 공간을 2배 씩 늘려주는 코드를 작성하세요.
