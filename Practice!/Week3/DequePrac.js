@@ -70,7 +70,30 @@ class MyDeque {
         return this.front === this.rear;
     }
 
- 성
+    isFull() {
+        return (this.rear + 1) % this.arr.length === this.front;
+    }
+
+    addFirst(data) {
+        if (this.isFull()) {
+            console.log("Deque is full!");
+            return;
+        }
+        this.front = (this.front - 1 + this.arr.length) % this.arr.length;
+        this.arr[this.front] = data;
+    }
+
+    addLast(data) {
+        if (this.isFull()) {
+            console.log("Deque is full!");
+            return;
+        }
+        this.rear = (this.rear + 1) % this.arr.length;
+        this.arr[this.rear] = data;
+    }
+
+    addMiddle(data) {
+        //여기에 코드 작성
     }
 
     removeFirst() {
@@ -131,3 +154,4 @@ myDeque2.printDeque();
 
 myDeque2.addMiddle(100);
 myDeque2.printDeque();
+
