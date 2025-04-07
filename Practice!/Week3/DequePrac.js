@@ -161,3 +161,101 @@ myDeque2.printDeque();
 // 데크 리사이즈
 // 기본 데크 구조에서 데크 공간이 full 일 때 데이터를 추가하는 경우,
 // 데크 공간을 2배 씩 늘려주는 코드를 작성하세요.
+class MyDeque2 {
+    constructor(size) {
+        this.arr = new Array(size + 1);  // Deque with size+1 to handle circular structure
+        this.front = 0;
+        this.rear = 0;
+    }
+
+    isEmpty() {
+        return this.front === this.rear;
+    }
+
+    isFull() {
+        return (this.rear + 1) % this.arr.length === this.front;
+    }
+
+    increaseSize() {
+        //여기에 코드 작성
+    }
+
+    addFirst(data) {
+        if (this.isFull()) {
+            console.log("Deque is full!");
+            return;
+        }
+
+        this.arr[this.front] = data;
+        this.front = (this.front - 1 + this.arr.length) % this.arr.length;
+    }
+
+    addLast(data) {
+        if (this.isFull()) {
+            console.log("Deque is full!");
+            return;
+        }
+
+        this.rear = (this.rear + 1) % this.arr.length;
+        this.arr[this.rear] = data;
+    }
+
+    removeFirst() {
+        if (this.isEmpty()) {
+            console.log("Deque is empty!");
+            return null;
+        }
+
+        this.front = (this.front + 1) % this.arr.length;
+        return this.arr[this.front];
+    }
+
+    removeLast() {
+        if (this.isEmpty()) {
+            console.log("Deque is empty!");
+            return null;
+        }
+
+        let data = this.arr[this.rear];
+        this.rear = (this.rear - 1 + this.arr.length) % this.arr.length;
+        return data;
+    }
+
+    printDeque() {
+        let start = (this.front + 1) % this.arr.length;
+        let end = (this.rear + 1) % this.arr.length;
+
+        while (start !== end) {
+            console.log(this.arr[start]);
+            start = (start + 1) % this.arr.length;
+        }
+    }
+}
+
+// Test code
+let myDeque = new MyDeque2(5);
+
+myDeque.addLast(1);
+myDeque.addLast(2);
+myDeque.addLast(3);
+myDeque.addLast(4);
+myDeque.addLast(5);
+myDeque.printDeque();
+
+myDeque.addLast(6);
+myDeque.addLast(7);
+myDeque.addLast(8);
+myDeque.addLast(9);
+myDeque.addLast(10);
+myDeque.printDeque();
+
+myDeque.removeLast();
+myDeque.removeLast();
+myDeque.addFirst(100);
+myDeque.addFirst(200);
+myDeque.printDeque();
+
+myDeque.addFirst(300);
+myDeque.addFirst(400);
+myDeque.addFirst(500);
+myDeque.printDeque();
