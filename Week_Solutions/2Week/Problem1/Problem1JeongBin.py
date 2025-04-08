@@ -1,4 +1,7 @@
 
+
+<<<<<<< HEAD:$
+
 def solution(num, k):
     a = 0 
     
@@ -17,3 +20,8 @@ print(solution([1, 2, 3], 3))
 print(solution([1, 2, 3, 4], 2))       
 #(공 던짐 순서: 1 → 3)
 
+
+
+=======
+print(solution([1, 1, 3, 3, 0, 1, 1]))  
+>>>>>>> 0e74dca210af2c54756e81ec874c5cfd7fe8fdf8:Week_Solutions/2Week/Problem1/Problem1JeongBin.py
