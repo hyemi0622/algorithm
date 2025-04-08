@@ -1,5 +1,5 @@
 //송재현 
-//큐,덱 자료구조 안씀 
+//3주차 자료구조 안씀 
 
 #include <string>
 #include <vector>
