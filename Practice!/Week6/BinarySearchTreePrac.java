@@ -100,3 +100,33 @@ public class Practice2 {
         solution(data);
     }
 }
+
+// Practice3
+// 주어진 BST 에서 두 노드의 합이 target 값이 되는 경우가 있는지 확인하세요.
+// 있으면 true, 없으면 false 반환
+
+// 입력 트리: 5, 3, 6, 2, 4, null, 7
+// 결과: true
+
+// 입력 트리: 5,3,6,2,4,null,7
+// 결과: false
+
+import java.util.HashSet;
+
+public class Practice4 {
+    public static void solution(Integer[] data, int target) {
+        // 여기에 코드 작성. 다른 함수도 추가 가능
+    }
+    
+
+    public static void main(String[] args) {
+        Integer[] data = {5, 3, 6, 2, 4, null, 7};
+        int target = 9;
+        solution(data, target);
+
+        data = new Integer[]{5,3,6,2,4,null,7};
+        target = 28;
+        solution(data, target);
+    }
+}
+
