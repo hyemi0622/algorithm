@@ -108,3 +108,64 @@ int main() {
 }
 
 
+// Practice3
+// 주어진 BST 에서 두 노드의 합이 target 값이 되는 경우가 있는지 확인하세요.
+// 있으면 true, 없으면 false 반환
+
+// 입력 트리: 5, 3, 6, 2, 4, null, 7
+// 결과: true
+
+// 입력 트리: 5,3,6,2,4,null,7
+// 결과: false
+
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+class Node {
+    int key;
+    Node left;
+    Node right;
+
+    Node(int key, Node left, Node right) {
+        this.key = key;
+        this.left = left;
+        this.right = right;
+    }
+}
+
+class BinarySearchTree {
+    Node head;
+
+    BinarySearchTree() {}
+    BinarySearchTree(int key) {
+        this.head = new Node(key, null, null);
+    }
+
+    public void addNode(int key) {
+        this.head = this.addNode(this.head, key);
+    }
+
+    public Node addNode(Node cur, int key) {
+        if (cur == null) {
+            return new Node(key, null, null);
+        }
+
+        if (key < cur.key) {
+            cur.left = addNode(cur.left, key);
+        } else {
+            cur.right = addNode(cur.right, key);
+        }
+
+        return cur;
+    }
+}
+void solution(const vector<optional<int>>& data, int target) {
+    // 여기 코드 작성, 함수 더 추가 가능
+}
+
+int main() {
+    solution({5, 3, 6, 2, 4, nullopt, 7}, 9);    // true
+    solution({5, 3, 6, 2, 4, nullopt, 7}, 28);   // false
+    return 0;
+}
