@@ -84,3 +84,47 @@ def solution(data: List[Optional[int]]):
 solution([3, 1, 4, None, 2])  # 출력: 최소 차이: 1
 solution([5, 1, 48, None, None, 12, 51])  # 출력: 최소 차이: 3
 
+
+# Practice3
+# 주어진 BST 에서 두 노드의 합이 target 값이 되는 경우가 있는지 확인하세요.
+# 있으면 true, 없으면 false 반환
+
+# 입력 트리: 5, 3, 6, 2, 4, null, 7
+# 결과: true
+
+# 입력 트리: 5,3,6,2,4,null,7
+# 결과: false
+
+from typing import Optional, List, Set
+
+class Node:
+    def __init__(self, key: int):
+        self.key = key
+        self.left: Optional['Node'] = None
+        self.right: Optional['Node'] = None
+
+class BinarySearchTree:
+    def __init__(self, key: Optional[int] = None):
+        self.head: Optional[Node] = None
+        if key is not None:
+            self.head = Node(key)
+
+    def add_node(self, key: int):
+        self.head = self._add_node(self.head, key)
+
+    def _add_node(self, cur: Optional[Node], key: int) -> Node:
+        if not cur:
+            return Node(key)
+        if key < cur.key:
+            cur.left = self._add_node(cur.left, key)
+        else:
+            cur.right = self._add_node(cur.right, key)
+        return cur
+
+def solution(data: List[Optional[int]], target: int):
+    # 여기 코드 작성, 함수 더 추가 가능
+
+# 테스트
+solution([5, 3, 6, 2, 4, None, 7], 9)    # true
+solution([5, 3, 6, 2, 4, None, 7], 28)   # false
+
