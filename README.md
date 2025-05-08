@@ -16,12 +16,12 @@
 | 03 | 3주차 (4월 8일)  ✔ | 선형자료구조 - 큐, 데크, 해시 테이블 | [바로가기](./Week/3rd_week) | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) |
 | 04 | 4주차 (4월 15일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) | 
 | 05 | 5주차 (4월 22일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
-| 06 | 6주차 (4월 29일)  | 비선형자료구조 - 트리, 이진탐색, 그래프  | [바로가기](./Week/6th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
-| 07 | 7주차 (5월 6일)  | 비선형자료구조 - 힙, 우선순위 큐, 트라이  | [바로가기](./Week/7th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
-| 08 | 8주차 (5월 13일)  | 알고리즘 - 버블 정렬, 삽입 정렬, 선택 정렬, 힙정렬  | [바로가기](./Week/8th_week) | 4 | ![status](https://img.shields.io/badge/Not%20started-112051) |
-| 09 | 9주차 (5월 20일)  | 알고리즘 - 합병 정렬, 퀵 정렬, 기수 정렬  | [바로가기](./Week/9th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
-| 10 | 10주차 (5월 27일)  | 알고리즘 - 계수 정렬, 셸 정렬, 이진 탐색  | [바로가기](./Week/10th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
-| 11 | 11주차 (6월 3일)   | 알고리즘 - 투 포인터, 그리디, 백 트래킹, 최소 신장 트리  | [바로가기](./Week/11th_week) | 4 | ![status](https://img.shields.io/badge/Not%20started-112051) |
-| 12 | 12주차 (6월 10일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) | 
-| 13 | 13주차 (6월 17일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
-| 14 | 14주차 (6월 24일) - 종강 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 06 | 6주차 (5월 8일)  | 비선형자료구조 - 트리, 이진탐색, 그래프  | [바로가기](./Week/6th_week) | 5 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 07 | 7주차 (5월 13일)  | 비선형자료구조 - 힙, 우선순위 큐, 트라이  | [바로가기](./Week/7th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 08 | 8주차 (5월 20일)  | 알고리즘 - 버블 정렬, 삽입 정렬, 선택 정렬, 힙정렬  | [바로가기](./Week/8th_week) | 4 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 09 | 9주차 (5월 27일)  | 알고리즘 - 합병 정렬, 퀵 정렬, 기수 정렬  | [바로가기](./Week/9th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 10 | 10주차 (6월 3일)  | 알고리즘 - 계수 정렬, 셸 정렬, 이진 탐색  | [바로가기](./Week/10th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 11 | 11주차 (6월 10일) - 시험기간   | ❌ | ❌ | 4 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 12 | 12주차 (6월 17일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) | 
+| 13 | 13주차 (6월 24일) - 종강 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 14 | 14주차 (미정)  | 알고리즘 - 투 포인터, 그리디, 백 트래킹, 최소 신장 트리  | [바로가기](./Week/14th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
