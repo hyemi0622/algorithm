@@ -1,30 +1,20 @@
-#include <iostream>
-#include <stack>
-using namespace std;
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
 
-int solution(const char* my_string, const char* is_suffix) {
-    int answer = 0;
-    stack<char> arr1, arr2;
-    for (int i = 0; ; i++) {
-        if (my_string[i] == '\0')
-            break;
-        arr1.push(my_string[i]);
+// num_list_len은 배열 num_list의 길이입니다.
+int solution(int num_list[], size_t num_list_len) {
+    int answer, hol, jjak;
+    answer = hol = jjak = 0;
+    for (int i = 0; i < num_list_len; i++) {
+        if (i % 2 == 0)
+            hol += num_list[i];
+        else
+            jjak += num_list[i];
     }
-
-    for (int i = 0; ; i++) {
-        if (is_suffix[i] == '\0')
-            break;
-        arr2.push(is_suffix[i]);
-    }
-
-    while (!arr2.empty()) {
-        if (arr1.top() == arr2.top()) {
-            arr1.pop();
-            arr2.pop();
-        }
-        else {
-            return 0;
-        }
-    }
-    return 1;
+    if (hol >= jjak)
+        answer = hol;
+    else
+        answer = jjak;
+    return answer;
 }
