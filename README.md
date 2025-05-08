@@ -14,8 +14,8 @@
 | 01 | 1주차 (3월 25일) ✔ | 선형자료구조 - 배열  | [바로가기](./Week/1st_week) | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) |
 | 02 | 2주차 (4월 1일)  ✔ | 선형자료구조 - 연결리스트, 스택  | [바로가기](./Week/2nd_week) | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) |
 | 03 | 3주차 (4월 8일)  ✔ | 선형자료구조 - 큐, 데크, 해시 테이블 | [바로가기](./Week/3rd_week) | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) |
-| 04 | 4주차 (4월 15일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) | 
-| 05 | 5주차 (4월 22일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 04 | 4주차 (4월 15일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) | 
+| 05 | 5주차 (4월 22일) - 시험기간 | ❌ | ❌ | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) |
 | 06 | 6주차 (5월 8일)  | 비선형자료구조 - 트리, 이진탐색, 그래프  | [바로가기](./Week/6th_week) | 5 | ![status](https://img.shields.io/badge/Not%20started-112051) |
 | 07 | 7주차 (5월 13일)  | 비선형자료구조 - 힙, 우선순위 큐, 트라이  | [바로가기](./Week/7th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
 | 08 | 8주차 (5월 20일)  | 알고리즘 - 버블 정렬, 삽입 정렬, 선택 정렬, 힙정렬  | [바로가기](./Week/8th_week) | 4 | ![status](https://img.shields.io/badge/Not%20started-112051) |
