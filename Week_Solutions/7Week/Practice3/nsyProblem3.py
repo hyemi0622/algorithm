@@ -3,5 +3,5 @@ def solution(arr):
         return [-1]
     
     f = arr.index(2)
-    l = len(arr) - 1 - arr[::-1].index(2)
-    return arr[f:l+1]
+    l = len(arr) - arr[::-1].index(2)
+    return arr[f:l]
