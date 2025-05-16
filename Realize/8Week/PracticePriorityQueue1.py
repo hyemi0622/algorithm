@@ -1,5 +1,6 @@
 import heapq
-
+# 비선형 자료구조 - 우선순위 큐
+# 연결 리스트를 이용한 우선순위 큐
 def enqueue(lst, data):
     idx = 0
     while idx < len(lst) and lst[idx] <= data:
