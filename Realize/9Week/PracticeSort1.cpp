@@ -12,6 +12,7 @@ void printArray(const vector<int>& arr, const string& name) {
 
 // 버블 정렬
 void bubbleSort(vector<int>& arr) {
+     // 1.
     for (int i = 1; i < arr.size() - 1; i++) {
         for (int j = 0; j < arr.size() - i; j++) {
             if (arr[j] > arr[j + 1]) {
@@ -19,7 +20,7 @@ void bubbleSort(vector<int>& arr) {
             }
         }
     }
-
+    // 2. (1과 2 같은 방식인데 i 인덱스 사용 다르게 참고)
     for (int i = arr.size() - 1; i > 0; i--) {
         for (int j = 0; j < i; j++) {
             if (arr[j] > arr[j + 1]) {
@@ -44,6 +45,7 @@ void insertionSort(vector<int>& arr) {
 
 // 선택 정렬
 void selectionSort(vector<int>& arr) {
+     // 1. 최소 값을 찾아 앞 쪽부터 교환하는 방식
     for (int i = 0; i < arr.size() - 1; i++) {
         int minIdx = i;
         for (int j = i + 1; j < arr.size(); j++) {
@@ -53,7 +55,7 @@ void selectionSort(vector<int>& arr) {
         }
         swap(arr[i], arr[minIdx]);
     }
-
+     // 2. 최대 값을 찾아 뒤 쪽부터 교환하는 방식
     for (int i = arr.size() - 1; i > 0; i--) {
         int maxIdx = i;
         for (int j = i - 1; j >= 0; j--) {
