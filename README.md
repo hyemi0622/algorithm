@@ -19,7 +19,7 @@
 | 06 | 6주차 (5월 8일)  | 비선형자료구조 - 트리, 이진탐색, 그래프  | [바로가기](./Week/6th_week) | 5 | ![status](https://img.shields.io/badge/Finish%20-00900) |
 | 07 | 7주차 (5월 13일)  | 비선형자료구조 - 힙  | [바로가기](./Week/7th_week) | 3 |  ![status](https://img.shields.io/badge/Finish%20-00900) |
 | 08 | 8주차 (5월 20일)  | 비선형자료구조 -  우선순위 큐, 트라이  | [바로가기](./Week/8th_week) | 3 | ![status](https://img.shields.io/badge/Finish%20-00900) |
-| 09 | 9주차 (5월 27일)  | 알고리즘 - 버블 정렬, 삽입 정렬, 선택 정렬  | [바로가기](./Week/9th_week) | 4 | ![status](https://img.shields.io/badge/Not%20started-112051) |
+| 09 | 9주차 (5월 27일)  | 알고리즘 - 버블 정렬, 삽입 정렬, 선택 정렬  | [바로가기](./Week/9th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
 | 10 | 10주차 (6월 3일)  | 알고리즘 - 힙 정렬, 합병 정렬, 퀵 정렬  | [바로가기](./Week/10th_week) | 3 | ![status](https://img.shields.io/badge/Not%20started-112051) |
 | 11 | 11주차 (6월 10일) - 시험기간  | ❌  | ❌ | ❌ | ![status](https://img.shields.io/badge/Not%20started-112051) |
 | 12 | 12주차 (6월 17일) - 시험기간   | ❌ | ❌ | ❌ | ![status](https://img.shields.io/badge/Not%20started-112051) |
